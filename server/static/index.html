@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Akinator Lite</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Ubuntu; background:#0b1220; color:#e8eefc; margin:0;}
+    .wrap{max-width:980px;margin:0 auto;padding:18px;}
+    .card{background:#111a2e;border:1px solid #1b2a4a;border-radius:16px;padding:16px;margin-top:12px;}
+    .row{display:flex;gap:12px;flex-wrap:wrap}
+    select,button,input{border-radius:12px;border:1px solid #24385f;background:#0f1729;color:#e8eefc;padding:10px}
+    button{cursor:pointer;font-weight:650}
+    button.primary{background:#2b67ff;border-color:#2b67ff}
+    button.good{background:#1d9b6c;border-color:#1d9b6c}
+    button.bad{background:#d9534f;border-color:#d9534f}
+    button.soft{background:#0f1729}
+    small{color:#a9b7d7}
+    .muted{color:#a9b7d7}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:12px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .list{max-height:280px;overflow:auto;background:#0f1729;border:1px solid #24385f;border-radius:12px;padding:8px}
+    .pill{display:inline-block;background:#0f1729;border:1px solid #24385f;border-radius:999px;padding:4px 10px;margin-right:6px}
+    pre{white-space:pre-wrap}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1 style="margin:6px 0 2px 0;">Akinator Lite</h1>
+  <div class="muted">Pense à un mot (ne l’envoie jamais au serveur). Je pose des questions et je tente de deviner.</div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <div class="row" style="align-items:end">
+          <div style="flex:1;min-width:220px">
+            <div><small>Thème</small></div>
+            <select id="themeSelect" style="width:100%"></select>
+            <div class="muted" style="margin-top:6px"><small>La liste de mots sert juste de support.</small></div>
+          </div>
+          <div style="min-width:240px">
+            <div><small>Difficulté</small></div>
+            <div class="row">
+              <button class="diffBtn soft" data-d="easy">easy</button>
+              <button class="diffBtn soft" data-d="medium">medium</button>
+              <button class="diffBtn soft" data-d="hard">hard</button>
+            </div>
+          </div>
+          <div style="min-width:200px">
+            <button id="startBtn" class="primary" style="width:100%">Démarrer</button>
+            <button id="resetBtn" class="soft" style="width:100%;margin-top:8px">Reset UI</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="playCard">
+        <div class="row" style="justify-content:space-between;align-items:start">
+          <div>
+            <div style="font-weight:750">Partie</div>
+            <div class="muted"><small id="statusLine">Clique “Démarrer”.</small></div>
+          </div>
+          <div style="text-align:right">
+            <div><small>game_id</small></div>
+            <div class="mono" id="gameId">—</div>
+          </div>
+        </div>
+
+        <div id="questionBox" style="display:none;margin-top:16px">
+          <div><small>Question</small></div>
+          <div id="questionText" style="font-size:20px;font-weight:800;margin-top:6px"></div>
+          <div class="row" style="margin-top:12px">
+            <button id="btnYes" class="good">Oui</button>
+            <button id="btnNo" class="bad">Non</button>
+            <button id="btnSkip" class="soft">Passer</button>
+          </div>
+        </div>
+
+        <div id="guessBox" style="display:none;margin-top:16px">
+          <div><small>Proposition</small></div>
+          <div id="guessText" style="font-size:20px;font-weight:800;margin-top:6px"></div>
+          <div class="muted"><small id="guessConf"></small></div>
+          <div class="row" style="margin-top:12px">
+            <button id="btnCorrect" class="good">Oui c’est ça</button>
+            <button id="btnWrong" class="soft">Non</button>
+          </div>
+        </div>
+
+        <div id="doneBox" style="display:none;margin-top:16px">
+          <div><small>Résultat</small></div>
+          <div id="doneText" style="font-size:18px;font-weight:750;margin-top:6px"></div>
+          <div class="row" style="margin-top:12px">
+            <button id="btnRestart" class="primary">Rejouer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <div style="font-weight:750">Mots (support)</div>
+        <div class="muted"><small>Choisis-en un dans ta tête.</small></div>
+        <input id="wordSearch" placeholder="Rechercher..." style="width:100%;margin-top:10px"/>
+        <div class="list" id="wordsBox" style="margin-top:10px">—</div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:750">Debug</div>
+        <div style="margin-top:10px">
+          <div class="row"><span class="pill">theme: <span id="dbgTheme" class="mono">—</span></span><span class="pill">diff: <span id="dbgDiff" class="mono">—</span></span></div>
+          <div class="row" style="margin-top:8px"><span class="pill">step: <span id="dbgStep" class="mono">—</span></span><span class="pill">candidates: <span id="dbgCand" class="mono">—</span></span><span class="pill">asked: <span id="dbgAsked" class="mono">—</span></span></div>
+        </div>
+        <button id="btnState" class="soft" style="width:100%;margin-top:12px">GET /api/state</button>
+        <pre id="stateBox" style="display:none;margin-top:10px;background:#0f1729;border:1px solid #24385f;border-radius:12px;padding:10px"></pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let THEME=null, DIFF="easy", WORDS=[], GAME_ID=null;
+let LAST_QUESTION=null, LAST_GUESS=null;
+
+const el=(id)=>document.getElementById(id);
+
+function hideAll(){
+  el("questionBox").style.display="none";
+  el("guessBox").style.display="none";
+  el("doneBox").style.display="none";
+}
+
+function setStatus(s){ el("statusLine").textContent=s; }
+
+function updateDebug(turn){
+  el("gameId").textContent = turn?.game_id || "—";
+  el("dbgTheme").textContent = turn?.theme || "—";
+  el("dbgDiff").textContent = turn?.difficulty || "—";
+  el("dbgStep").textContent = (turn?.step ?? "—");
+  el("dbgCand").textContent = (turn?.candidates_left ?? "—");
+  el("dbgAsked").textContent = (turn?.asked_count ?? "—");
+}
+
+async function apiGet(url){
+  const r=await fetch(url);
+  if(!r.ok) throw new Error(await r.text());
+  return await r.json();
+}
+async function apiPost(url, body){
+  const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  if(!r.ok) throw new Error(await r.text());
+  return await r.json();
+}
+
+async function refreshWords(){
+  if(!THEME) return;
+  const data=await apiGet(`/api/words?theme=${encodeURIComponent(THEME)}&difficulty=${encodeURIComponent(DIFF)}`);
+  WORDS=data.words||[];
+  renderWords();
+}
+
+function renderWords(){
+  const box=el("wordsBox");
+  const q=el("wordSearch").value.trim().toLowerCase();
+  const list=WORDS.filter(w=>!q || w.label.toLowerCase().includes(q));
+  box.innerHTML = list.map(w=>`<div style="padding:6px 8px;border-bottom:1px solid #162340">${w.label}</div>`).join("") || "<div class='muted'>Aucun mot</div>";
+}
+
+function applyTurn(turn){
+  updateDebug(turn);
+  hideAll();
+  LAST_QUESTION = turn.question || null;
+  LAST_GUESS = turn.guess || null;
+
+  if(turn.action.type==="question"){
+    el("questionText").textContent = turn.question.text;
+    el("questionBox").style.display="block";
+    setStatus(`Question (candidats: ${turn.candidates_left})`);
+    return;
+  }
+  if(turn.action.type==="guess"){
+    el("guessText").textContent = `Je pense à : ${turn.guess.label}`;
+    el("guessConf").textContent = `Confiance: ${(turn.guess.confidence*100).toFixed(0)}%`;
+    el("guessBox").style.display="block";
+    setStatus(`Proposition (candidats: ${turn.candidates_left})`);
+    return;
+  }
+  if(turn.action.type==="done"){
+    el("doneText").textContent = turn.done?.message || "Terminé";
+    el("doneBox").style.display="block";
+    setStatus("Partie terminée");
+    return;
+  }
+  setStatus("Action inconnue");
+}
+
+async function loadMeta(){
+  const meta = await apiGet("/api/meta");
+  const sel=el("themeSelect");
+  sel.innerHTML="";
+  meta.themes.forEach(t=>{
+    const o=document.createElement("option");
+    o.value=t.key;
+    o.textContent=`${t.label} (${t.count})`;
+    sel.appendChild(o);
+  });
+  THEME = meta.themes?.[0]?.key || null;
+  sel.value = THEME || "";
+  setDiff("easy");
+  await refreshWords();
+}
+
+function setDiff(d){
+  DIFF=d;
+  document.querySelectorAll(".diffBtn").forEach(b=>{
+    b.style.borderColor = (b.dataset.d===DIFF) ? "#2b67ff" : "#24385f";
+  });
+  refreshWords();
+}
+
+async function startGame(){
+  if(!THEME) return alert("Choisis un thème");
+  const turn = await apiPost("/api/start", {theme:THEME, difficulty:DIFF});
+  GAME_ID=turn.game_id;
+  applyTurn(turn);
+}
+
+async function answer(ans){
+  if(!GAME_ID || !LAST_QUESTION) return;
+  const turn = await apiPost(`/api/answer?game_id=${encodeURIComponent(GAME_ID)}`, {question_key:LAST_QUESTION.key, answer:ans});
+  applyTurn(turn);
+}
+
+async function feedback(correct){
+  if(!GAME_ID || !LAST_GUESS) return;
+  const turn = await apiPost(`/api/guess_feedback?game_id=${encodeURIComponent(GAME_ID)}`, {guess_id:LAST_GUESS.id, correct:!!correct});
+  applyTurn(turn);
+}
+
+function resetUi(){
+  GAME_ID=null; LAST_QUESTION=null; LAST_GUESS=null;
+  hideAll();
+  setStatus("Clique “Démarrer”.");
+  updateDebug(null);
+  el("stateBox").style.display="none";
+  el("stateBox").textContent="";
+}
+
+async function getState(){
+  if(!GAME_ID) return alert("Aucune partie active");
+  const data = await apiGet(`/api/state?game_id=${encodeURIComponent(GAME_ID)}`);
+  el("stateBox").style.display="block";
+  el("stateBox").textContent = JSON.stringify(data,null,2);
+}
+
+el("themeSelect").addEventListener("change", (e)=>{THEME=e.target.value; refreshWords();});
+el("wordSearch").addEventListener("input", renderWords);
+document.querySelectorAll(".diffBtn").forEach(b=>b.addEventListener("click", ()=>setDiff(b.dataset.d)));
+el("startBtn").addEventListener("click", ()=>startGame().catch(err=>alert(err)));
+el("resetBtn").addEventListener("click", resetUi);
+el("btnYes").addEventListener("click", ()=>answer("yes").catch(err=>alert(err)));
+el("btnNo").addEventListener("click", ()=>answer("no").catch(err=>alert(err)));
+el("btnSkip").addEventListener("click", ()=>answer("skip").catch(err=>alert(err)));
+el("btnCorrect").addEventListener("click", ()=>feedback(true).catch(err=>alert(err)));
+el("btnWrong").addEventListener("click", ()=>feedback(false).catch(err=>alert(err)));
+el("btnRestart").addEventListener("click", ()=>startGame().catch(err=>alert(err)));
+el("btnState").addEventListener("click", ()=>getState().catch(err=>alert(err)));
+
+loadMeta().catch(err=>{console.error(err); alert("Erreur de chargement /api/meta");});
+</script>
+</body>
+</html>

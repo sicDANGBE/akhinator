@@ -1,0 +1,1384 @@
+{
+  "themes": [
+    {
+      "key": "animals",
+      "label": "Animaux"
+    },
+    {
+      "key": "food",
+      "label": "Nourriture"
+    },
+    {
+      "key": "things",
+      "label": "Objets"
+    }
+  ],
+  "features": [
+    {
+      "key": "is_animal",
+      "question": "Est-ce un animal ?"
+    },
+    {
+      "key": "is_food",
+      "question": "Est-ce de la nourriture ou une boisson ?"
+    },
+    {
+      "key": "is_vehicle",
+      "question": "Est-ce un moyen de transport ?"
+    },
+    {
+      "key": "is_electronic",
+      "question": "Est-ce un objet électronique ?"
+    },
+    {
+      "key": "has_wheels",
+      "question": "Est-ce que ça a des roues ?"
+    },
+    {
+      "key": "can_fly",
+      "question": "Est-ce que ça peut voler ?"
+    },
+    {
+      "key": "lives_in_water",
+      "question": "Est-ce que ça vit dans l'eau ?"
+    },
+    {
+      "key": "is_pet",
+      "question": "Est-ce un animal domestique (compagnon) ?"
+    },
+    {
+      "key": "is_fruit",
+      "question": "Est-ce un fruit ?"
+    },
+    {
+      "key": "is_vegetable",
+      "question": "Est-ce un légume ?"
+    },
+    {
+      "key": "is_musical_instrument",
+      "question": "Est-ce un instrument de musique ?"
+    },
+    {
+      "key": "is_tool",
+      "question": "Est-ce un outil ?"
+    },
+    {
+      "key": "is_clothing",
+      "question": "Est-ce un vêtement ?"
+    },
+    {
+      "key": "needs_battery",
+      "question": "Est-ce que ça fonctionne avec une batterie ?"
+    },
+    {
+      "key": "is_hot",
+      "question": "Est-ce que ça se consomme/sert généralement chaud ?"
+    },
+    {
+      "key": "is_cold",
+      "question": "Est-ce que ça se consomme/sert généralement froid ?"
+    }
+  ],
+  "items": [
+    {
+      "id": "dog",
+      "label": "Chien",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": false,
+        "is_electronic": false,
+        "has_wheels": false,
+        "can_fly": false,
+        "lives_in_water": false,
+        "is_pet": true,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": false,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "cat",
+      "label": "Chat",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": false,
+        "is_electronic": false,
+        "has_wheels": false,
+        "can_fly": false,
+        "lives_in_water": false,
+        "is_pet": true,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "goldfish",
+      "label": "Poisson rouge",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": true,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "dolphin",
+      "label": "Dauphin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": false,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "eagle",
+      "label": "Aigle",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": true,
+        "lives_in_water": false,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "penguin",
+      "label": "Pingouin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": false,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "snake",
+      "label": "Serpent",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "spider",
+      "label": "Araignée",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": false,
+        "lives_in_water": false,
+        "is_pet": false,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "horse",
+      "label": "Cheval",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": true,
+        "is_electronic": null,
+        "has_wheels": false,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "cow",
+      "label": "Vache",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": false,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "sheep",
+      "label": "Mouton",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": true,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "shark",
+      "label": "Requin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "frog",
+      "label": "Grenouille",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "turtle",
+      "label": "Tortue",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "butterfly",
+      "label": "Papillon",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": true,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "bee",
+      "label": "Abeille",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": true,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "octopus",
+      "label": "Poulpe",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "whale",
+      "label": "Baleine",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "rabbit",
+      "label": "Lapin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": true,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "lion",
+      "label": "Lion",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_food": false,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": false,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "apple",
+      "label": "Pomme",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": true,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": false,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "banana",
+      "label": "Banane",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": true,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "orange",
+      "label": "Orange",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": true,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "strawberry",
+      "label": "Fraise",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": true,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "carrot",
+      "label": "Carotte",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": true,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "broccoli",
+      "label": "Brocoli",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": true,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "tomato",
+      "label": "Tomate",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "potato",
+      "label": "Pomme de terre",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": true,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "pizza",
+      "label": "Pizza",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": true,
+        "is_cold": false
+      }
+    },
+    {
+      "id": "sushi",
+      "label": "Sushi",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": false,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "burger",
+      "label": "Burger",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": true,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "salad",
+      "label": "Salade",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": true,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": false,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "chocolate",
+      "label": "Chocolat",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "ice_cream",
+      "label": "Glace",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "coffee",
+      "label": "Café",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": true,
+        "is_cold": false
+      }
+    },
+    {
+      "id": "tea",
+      "label": "Thé",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_animal": false,
+        "is_food": true,
+        "is_vehicle": null,
+        "is_electronic": null,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": true,
+        "is_cold": false
+      }
+    },
+    {
+      "id": "bike",
+      "label": "Vélo",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": true,
+        "is_electronic": false,
+        "has_wheels": true,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "car",
+      "label": "Voiture",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": true,
+        "is_electronic": true,
+        "has_wheels": true,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "bus",
+      "label": "Bus",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": true,
+        "is_electronic": true,
+        "has_wheels": true,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "train",
+      "label": "Train",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": true,
+        "is_electronic": true,
+        "has_wheels": true,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "airplane",
+      "label": "Avion",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": true,
+        "is_electronic": true,
+        "has_wheels": true,
+        "can_fly": true,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "boat",
+      "label": "Bateau",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": true,
+        "is_electronic": null,
+        "has_wheels": false,
+        "can_fly": null,
+        "lives_in_water": true,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "smartphone",
+      "label": "Smartphone",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": true,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": true,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "laptop",
+      "label": "Ordinateur portable",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": true,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": true,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "television",
+      "label": "Télévision",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": true,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": false,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "guitar",
+      "label": "Guitare",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": false,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": true,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "piano",
+      "label": "Piano",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": false,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": true,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "hammer",
+      "label": "Marteau",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": false,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": true,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "screwdriver",
+      "label": "Tournevis",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": false,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": true,
+        "is_clothing": null,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "t_shirt",
+      "label": "T-shirt",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": false,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": true,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "headphones",
+      "label": "Casque audio",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": true,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": null,
+        "needs_battery": true,
+        "is_hot": null,
+        "is_cold": null
+      }
+    },
+    {
+      "id": "backpack",
+      "label": "Sac à dos",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_animal": null,
+        "is_food": null,
+        "is_vehicle": null,
+        "is_electronic": false,
+        "has_wheels": null,
+        "can_fly": null,
+        "lives_in_water": null,
+        "is_pet": null,
+        "is_fruit": null,
+        "is_vegetable": null,
+        "is_musical_instrument": null,
+        "is_tool": null,
+        "is_clothing": true,
+        "needs_battery": null,
+        "is_hot": null,
+        "is_cold": null
+      }
+    }
+  ]
+}

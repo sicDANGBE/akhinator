@@ -1,0 +1,2269 @@
+{
+  "themes": [
+    {
+      "key": "animals",
+      "label": "Animaux"
+    },
+    {
+      "key": "food",
+      "label": "Nourriture"
+    },
+    {
+      "key": "things",
+      "label": "Objets"
+    }
+  ],
+  "features": [
+    {
+      "key": "is_animal",
+      "question": "Est-ce un animal ?"
+    },
+    {
+      "key": "is_food",
+      "question": "Est-ce de la nourriture ou une boisson ?"
+    },
+    {
+      "key": "is_vehicle",
+      "question": "Est-ce un moyen de transport ?"
+    },
+    {
+      "key": "is_electronic",
+      "question": "Est-ce un objet électronique ?"
+    },
+    {
+      "key": "has_wheels",
+      "question": "Est-ce que ça a des roues ?"
+    },
+    {
+      "key": "can_fly",
+      "question": "Est-ce que ça peut voler ?"
+    },
+    {
+      "key": "lives_in_water",
+      "question": "Est-ce que ça vit dans l'eau ?"
+    },
+    {
+      "key": "is_pet",
+      "question": "Est-ce un animal domestique (compagnon) ?"
+    },
+    {
+      "key": "is_fruit",
+      "question": "Est-ce un fruit ?"
+    },
+    {
+      "key": "is_vegetable",
+      "question": "Est-ce un légume ?"
+    },
+    {
+      "key": "is_musical_instrument",
+      "question": "Est-ce un instrument de musique ?"
+    },
+    {
+      "key": "is_tool",
+      "question": "Est-ce un outil ?"
+    },
+    {
+      "key": "is_clothing",
+      "question": "Est-ce un vêtement ?"
+    },
+    {
+      "key": "needs_battery",
+      "question": "Est-ce que ça fonctionne avec une batterie ?"
+    },
+    {
+      "key": "is_hot",
+      "question": "Est-ce que ça se consomme/sert généralement chaud ?"
+    },
+    {
+      "key": "is_cold",
+      "question": "Est-ce que ça se consomme/sert généralement froid ?"
+    }
+  ],
+  "items": [
+    {
+      "id": "dog",
+      "label": "Chien",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "cat",
+      "label": "Chat",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "goldfish",
+      "label": "Poisson rouge",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "dolphin",
+      "label": "Dauphin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "eagle",
+      "label": "Aigle",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "penguin",
+      "label": "Pingouin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "snake",
+      "label": "Serpent",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "spider",
+      "label": "Araignée",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "horse",
+      "label": "Cheval",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_vehicle": true
+      }
+    },
+    {
+      "id": "cow",
+      "label": "Vache",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "sheep",
+      "label": "Mouton",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "shark",
+      "label": "Requin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "frog",
+      "label": "Grenouille",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "turtle",
+      "label": "Tortue",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "butterfly",
+      "label": "Papillon",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "bee",
+      "label": "Abeille",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "octopus",
+      "label": "Poulpe",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "whale",
+      "label": "Baleine",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "rabbit",
+      "label": "Lapin",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "lion",
+      "label": "Lion",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "tiger",
+      "label": "Tigre",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "leopard",
+      "label": "Léopard",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "cheetah",
+      "label": "Guépard",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "panther",
+      "label": "Panthère",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "elephant",
+      "label": "Éléphant",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_vehicle": true
+      }
+    },
+    {
+      "id": "giraffe",
+      "label": "Girafe",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "zebra",
+      "label": "Zèbre",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "bear",
+      "label": "Ours",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "wolf",
+      "label": "Loup",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "fox",
+      "label": "Renard",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "hyena",
+      "label": "Hyène",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "deer",
+      "label": "Cerf",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "reindeer",
+      "label": "Renne",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "camel",
+      "label": "Chameau",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_vehicle": true
+      }
+    },
+    {
+      "id": "donkey",
+      "label": "Âne",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_vehicle": true
+      }
+    },
+    {
+      "id": "goat",
+      "label": "Chèvre",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "pig",
+      "label": "Cochon",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "boar",
+      "label": "Sanglier",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "chicken",
+      "label": "Poule",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "duck",
+      "label": "Canard",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "goose",
+      "label": "Oie",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "owl",
+      "label": "Hibou",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "parrot",
+      "label": "Perroquet",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "pigeon",
+      "label": "Pigeon",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "crow",
+      "label": "Corbeau",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "sparrow",
+      "label": "Moineau",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "flamingo",
+      "label": "Flamant rose",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "swan",
+      "label": "Cygne",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "bat",
+      "label": "Chauve-souris",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "kangaroo",
+      "label": "Kangourou",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "koala",
+      "label": "Koala",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "panda",
+      "label": "Panda",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "rhinoceros",
+      "label": "Rhinocéros",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "hippopotamus",
+      "label": "Hippopotame",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "crocodile",
+      "label": "Crocodile",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "lizard",
+      "label": "Lézard",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "chameleon",
+      "label": "Caméléon",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "iguana",
+      "label": "Iguane",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "hamster",
+      "label": "Hamster",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "guinea_pig",
+      "label": "Cochon d’Inde",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "ferret",
+      "label": "Furet",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "mouse",
+      "label": "Souris",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "rat",
+      "label": "Rat",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "is_pet": true
+      }
+    },
+    {
+      "id": "hedgehog",
+      "label": "Hérisson",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "squirrel",
+      "label": "Écureuil",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "raccoon",
+      "label": "Raton laveur",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "monkey",
+      "label": "Singe",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "gorilla",
+      "label": "Gorille",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "chimpanzee",
+      "label": "Chimpanzé",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "seal",
+      "label": "Phoque",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "otter",
+      "label": "Loutre",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "walrus",
+      "label": "Morse",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "crab",
+      "label": "Crabe",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "lobster",
+      "label": "Homard",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "jellyfish",
+      "label": "Méduse",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "ant",
+      "label": "Fourmi",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "mosquito",
+      "label": "Moustique",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "ladybug",
+      "label": "Coccinelle",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "dragonfly",
+      "label": "Libellule",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "snail",
+      "label": "Escargot",
+      "themes": [
+        "animals"
+      ],
+      "attrs": {
+        "is_animal": true
+      }
+    },
+    {
+      "id": "apple",
+      "label": "Pomme",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "banana",
+      "label": "Banane",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "orange",
+      "label": "Orange",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "strawberry",
+      "label": "Fraise",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "carrot",
+      "label": "Carotte",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_vegetable": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "broccoli",
+      "label": "Brocoli",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_vegetable": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "tomato",
+      "label": "Tomate",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "potato",
+      "label": "Pomme de terre",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_vegetable": true
+      }
+    },
+    {
+      "id": "pizza",
+      "label": "Pizza",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "sushi",
+      "label": "Sushi",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "burger",
+      "label": "Burger",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "salad",
+      "label": "Salade",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_vegetable": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "chocolate",
+      "label": "Chocolat",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "ice_cream",
+      "label": "Glace",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "coffee",
+      "label": "Café",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "tea",
+      "label": "Thé",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "pear",
+      "label": "Poire",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "peach",
+      "label": "Pêche",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "pineapple",
+      "label": "Ananas",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "mango",
+      "label": "Mangue",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "watermelon",
+      "label": "Pastèque",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "melon",
+      "label": "Melon",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "kiwi",
+      "label": "Kiwi",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "lemon",
+      "label": "Citron",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "lime",
+      "label": "Citron vert",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "grapes",
+      "label": "Raisin",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "cherry",
+      "label": "Cerise",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "blueberry",
+      "label": "Myrtille",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "raspberry",
+      "label": "Framboise",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "blackberry",
+      "label": "Mûre",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "apricot",
+      "label": "Abricot",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "plum",
+      "label": "Prune",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "fig",
+      "label": "Figue",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "pomegranate",
+      "label": "Grenade",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "coconut",
+      "label": "Noix de coco",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "avocado",
+      "label": "Avocat",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "date_fruit",
+      "label": "Datte",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true
+      }
+    },
+    {
+      "id": "papaya",
+      "label": "Papaye",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "passion_fruit",
+      "label": "Fruit de la passion",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "lychee",
+      "label": "Litchi",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "tangerine",
+      "label": "Mandarine",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "clementine",
+      "label": "Clémentine",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_fruit": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "honey",
+      "label": "Miel",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "yogurt",
+      "label": "Yaourt",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "cheese",
+      "label": "Fromage",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "milk",
+      "label": "Lait",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "water",
+      "label": "Eau",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "sparkling_water",
+      "label": "Eau gazeuse",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "orange_juice",
+      "label": "Jus d’orange",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "lemonade",
+      "label": "Limonade",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "soda",
+      "label": "Soda",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "smoothie",
+      "label": "Smoothie",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_cold": true
+      }
+    },
+    {
+      "id": "hot_chocolate",
+      "label": "Chocolat chaud",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "espresso",
+      "label": "Espresso",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "cappuccino",
+      "label": "Cappuccino",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "herbal_tea",
+      "label": "Tisane",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "bread",
+      "label": "Pain",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "baguette",
+      "label": "Baguette",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "croissant",
+      "label": "Croissant",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "pancake",
+      "label": "Pancake",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "crepe",
+      "label": "Crêpe",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "waffle",
+      "label": "Gaufre",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "omelette",
+      "label": "Omelette",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "eggs",
+      "label": "Œufs",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true
+      }
+    },
+    {
+      "id": "pasta",
+      "label": "Pâtes",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "rice",
+      "label": "Riz",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "noodles",
+      "label": "Nouilles",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "steak",
+      "label": "Steak",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "quiche",
+      "label": "Quiche",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "fries",
+      "label": "Frites",
+      "themes": [
+        "food"
+      ],
+      "attrs": {
+        "is_food": true,
+        "is_hot": true
+      }
+    },
+    {
+      "id": "bike",
+      "label": "Vélo",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true
+      }
+    },
+    {
+      "id": "car",
+      "label": "Voiture",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "bus",
+      "label": "Bus",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "train",
+      "label": "Train",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "airplane",
+      "label": "Avion",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "boat",
+      "label": "Bateau",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "lives_in_water": true
+      }
+    },
+    {
+      "id": "motorcycle",
+      "label": "Moto",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "scooter",
+      "label": "Trottinette",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true
+      }
+    },
+    {
+      "id": "skateboard",
+      "label": "Skateboard",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true
+      }
+    },
+    {
+      "id": "roller_skates",
+      "label": "Rollers",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true
+      }
+    },
+    {
+      "id": "wheelchair",
+      "label": "Fauteuil roulant",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true
+      }
+    },
+    {
+      "id": "stroller",
+      "label": "Poussette",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "has_wheels": true
+      }
+    },
+    {
+      "id": "smartphone",
+      "label": "Smartphone",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "tablet",
+      "label": "Tablette",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "laptop",
+      "label": "Ordinateur portable",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "desktop_pc",
+      "label": "Ordinateur de bureau",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "television",
+      "label": "Télévision",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "smartwatch",
+      "label": "Montre connectée",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "camera",
+      "label": "Appareil photo",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "headphones",
+      "label": "Casque audio",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "earbuds",
+      "label": "Écouteurs",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "speaker",
+      "label": "Enceinte",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "router",
+      "label": "Routeur Wi‑Fi",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "game_console",
+      "label": "Console de jeux",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true
+      }
+    },
+    {
+      "id": "drone",
+      "label": "Drone",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true,
+        "can_fly": true
+      }
+    },
+    {
+      "id": "flashlight",
+      "label": "Lampe torche",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true,
+        "is_tool": true
+      }
+    },
+    {
+      "id": "power_bank",
+      "label": "Batterie externe",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "electric_scooter",
+      "label": "Trottinette électrique",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "electric_bike",
+      "label": "Vélo électrique",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "electric_car",
+      "label": "Voiture électrique",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_vehicle": true,
+        "has_wheels": true,
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "guitar",
+      "label": "Guitare",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_musical_instrument": true
+      }
+    },
+    {
+      "id": "piano",
+      "label": "Piano",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_musical_instrument": true
+      }
+    },
+    {
+      "id": "violin",
+      "label": "Violon",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_musical_instrument": true
+      }
+    },
+    {
+      "id": "drums",
+      "label": "Batterie (instrument)",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_musical_instrument": true
+      }
+    },
+    {
+      "id": "flute",
+      "label": "Flûte",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_musical_instrument": true
+      }
+    },
+    {
+      "id": "trumpet",
+      "label": "Trompette",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_musical_instrument": true
+      }
+    },
+    {
+      "id": "hammer",
+      "label": "Marteau",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true
+      }
+    },
+    {
+      "id": "screwdriver",
+      "label": "Tournevis",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true
+      }
+    },
+    {
+      "id": "wrench",
+      "label": "Clé à molette",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true
+      }
+    },
+    {
+      "id": "pliers",
+      "label": "Pince",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true
+      }
+    },
+    {
+      "id": "saw",
+      "label": "Scie",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true
+      }
+    },
+    {
+      "id": "drill",
+      "label": "Perceuse",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true,
+        "is_electronic": true,
+        "needs_battery": true
+      }
+    },
+    {
+      "id": "ladder",
+      "label": "Échelle",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_tool": true
+      }
+    },
+    {
+      "id": "t_shirt",
+      "label": "T-shirt",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_clothing": true
+      }
+    },
+    {
+      "id": "jeans",
+      "label": "Jean",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_clothing": true
+      }
+    },
+    {
+      "id": "jacket",
+      "label": "Veste",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_clothing": true
+      }
+    },
+    {
+      "id": "shoes",
+      "label": "Chaussures",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_clothing": true
+      }
+    },
+    {
+      "id": "hat",
+      "label": "Chapeau",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_clothing": true
+      }
+    },
+    {
+      "id": "backpack",
+      "label": "Sac à dos",
+      "themes": [
+        "things"
+      ],
+      "attrs": {
+        "is_clothing": true
+      }
+    },
+    {
+      "id": "umbrella",
+      "label": "Parapluie",
+      "themes": [
+        "things"
+      ],
+      "attrs": {}
+    }
+  ]
+}
